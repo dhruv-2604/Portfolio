@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dhruv Sureka - Georgia Tech Student Portfolio">
+  <meta name="author" content="Dhruv Sureka">
+  <title>Dhruv Sureka | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JavaScript -->
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- ======================== NAVIGATION ======================== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="checkered-nav"></div>
+
+  <!-- ======================== HERO SECTION ======================== -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Dhruv Sureka</h1>
+        <p class="hero-tagline" id="typed-tagline"></p>
+
+        <p class="hero-bio">
+          Let me tell you some things about me.. I enjoy studying and learning about the super fast changes in the AI space right now. I am heavily involved with projects, coursework, and startups - all in the realm of advancing and understanding modern ML systems. Recently, I have worked on creating a Vision Transformer from scratch and training it on Georgia Tech's HPC cluster. In the process I learned the process of distributed training as well as writing custom CUDA kernels to speed up inference over naive PyTorch implementation. Along with that, my passion lies in creating things that improve peoples' lives by even 1%. Technical things aside, I love boxing and have been doing it for 2 years. I also really enjoy travelling and hope to make it to the north/south pole one day!
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#resume" class="btn btn-primary">View Resume</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="assets/img/headshot.png" alt="Dhruv Sureka" class="headshot-placeholder">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Racing Stripe Divider -->
+  <div class="racing-stripe">
+    <span class="stripe-navy"></span>
+    <span class="stripe-gold"></span>
+    <span class="stripe-navy"></span>
+  </div>
+
+  <!-- ======================== RESUME SECTION ======================== -->
+  <section id="resume" class="resume-section fade-in">
+    <div class="section-container">
+
+      <div class="section-header">
+        <h2>Resume</h2>
+        <p class="section-subtitle">My professional experience and education</p>
+      </div>
+
+      <div class="resume-container">
+        <iframe src="assets/docs/resume.pdf" width="100%" height="800" style="border: none; border-radius: 8px;"></iframe>
+      </div>
+
+      <div class="resume-download">
+        <a href="assets/docs/resume.pdf" class="btn btn-primary" download>Download Resume</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Racing Stripe Divider -->
+  <div class="racing-stripe">
+    <span class="stripe-navy"></span>
+    <span class="stripe-gold"></span>
+    <span class="stripe-navy"></span>
+  </div>
+
+  <!-- ======================== PORTFOLIO SECTION ======================== -->
+  <section id="portfolio" class="portfolio-section fade-in">
+    <div class="section-container">
+
+      <div class="section-header">
+        <h2>Portfolio</h2>
+        <p class="section-subtitle">Selected work that showcases my professional skills</p>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/vit_image.jpg" alt="Accelerated Vision Transformer">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Individual Project</span>
+            <h3>Accelerated Vision Transformer</h3>
+            <p>A GPU-optimized Vision Transformer for image classification, featuring custom CUDA kernels to speed up training on NVIDIA hardware. Deployed on Georgia Tech's PACE HPC cluster using PyTorch Lightning and Weights & Biases. Built with Python, CUDA, and C++.</p>
+            <a href="https://github.com/dhruv-2604/Accelerated-ViT" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/btc_project.webp" alt="Regime-Aware BTC Predictions">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Group Project</span>
+            <h3>Regime-Aware BTC Price Prediction</h3>
+            <p>An ML pipeline that predicts short-term Bitcoin price movements using limit order book data. Uses Hidden Markov Models to detect market regimes, then applies Logistic Regression and XGBoost for classification. Built with Python, scikit-learn, and walk-forward validation on 1M+ rows of high-frequency trading data.</p>
+            <a href="https://github.com/dhruv-2604/Regime-Aware-BTC-LOB-predictions-using-ML" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Racing Stripe Divider -->
+  <div class="racing-stripe">
+    <span class="stripe-navy"></span>
+    <span class="stripe-gold"></span>
+    <span class="stripe-navy"></span>
+  </div>
+
+  <!-- ======================== CONTACT SECTION ======================== -->
+  <section id="contact" class="contact-section fade-in">
+    <div class="section-container">
+
+      <div class="section-header">
+        <h2>Let's Connect</h2>
+        <p class="section-subtitle">Feel free to reach out for opportunities or collaborations</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-item">
+          <a href="mailto:dhruvsureka308@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <a href="https://www.linkedin.com/in/dhruvsureka1/" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="var(--navy)"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <a href="https://github.com/dhruv-2604" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="var(--navy)"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Checkered Flag Finish -->
+  <div class="checkered-footer"></div>
+
+</body>
+</html>

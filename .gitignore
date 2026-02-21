@@ -1,0 +1,18 @@
+# OS files
+.DS_Store
+
+# Assignment PDF
+*.pdf
+!assets/docs/resume.pdf
+
+# Loose images not in assets
+/python.png
+/pytorch.png
+
+# Memo drafts
+memo.md
+memo_updated.md
+
+# Claude Code
+.claude/
+CLAUDE.md
